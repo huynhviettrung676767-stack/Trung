@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-admin {
+  font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+/* Administrative document print layout according to Decree 30/2020/ND-CP */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 20mm 15mm 20mm 25mm; /* Standard: Top 20mm, Right 15mm, Bottom 20mm, Left 25mm */
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-family: 'Tinos', 'Times New Roman', Times, serif !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .admin-document {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+}

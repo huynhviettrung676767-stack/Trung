@@ -1,0 +1,6 @@
+{
+  "name": "Hệ Thống Quản Lý Đoàn Viên",
+  "description": "Hệ thống quản lý đoàn viên, chi đoàn, hoạt động phong trào, đánh giá phân loại đoàn viên và xuất báo cáo hành chính Nghị định 30/2020/NĐ-CP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
